@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="app.js">
+    <link rel="stylesheet" href="registro.html"> -->
+</head>
+<body>
+    <header>
+        <!-- contenido de encabezado -->
+        <div>
+            <img src="imgs/cartas_sin_fondo.png" alt="imagen de logo">
+            <!-- <h1 class="header-title">Showdown</h1> -->
+        </div>
+    </header>
+
+    <main>  
+        
+            <section class="container">
+
+                <article class="card_buttons"> <!-- botones de tarjetas -->
+                    <div class="card">
+                        <!-- <button class="card-btn">  -->
+                            <img src="imgs/1.png" alt="numero1" class="card-img">
+                        <!-- </button> -->
+                        </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">        -->
+                            <img src="imgs/2.png" alt="numero2" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">        -->
+                            <img src="imgs/3.png" alt="numero3" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">        -->
+                            <img src="imgs/4.png" alt="numero4" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">       -->
+                            <img src="imgs/5.png" alt="numero5" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">       -->
+                            <img src="imgs/6.png" alt="numero6" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">       -->
+                            <img src="imgs/7.png" alt="numero7" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">       -->
+                            <img src="imgs/8.png" alt="numero8" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">       -->
+                            <img src="imgs/9.png" alt="numero9" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">       -->
+                            <img src="imgs/10.png" alt="numero10" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn">   -->
+                            <img src="imgs/11.png" alt="numero11" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn"> -->
+                            <img src="imgs/12.png" alt="numero12" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                    <div class="card">
+                        <!-- <button class="card-btn"> -->
+                            <img src="imgs/13.png" alt="numero13" class="card-img">
+                        <!-- </button> -->
+                    </div>
+                </article>
+    
+
+                <article class="table_cards">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Carta</th>
+                                <th scope="col">Cant</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listado">
+                            <!-- Las filas de la tabla serán generadas dinámicamente -->
+                        </tbody>
+                    </table>
+                </article>
+            
+                <article class="registration_cards">
+                    <h2>Registro de cartas</h2>
+                    <form class="formulario cartas">
+                        <div>
+                            <label for="numero_carta"><b>Número de la carta:</b></label>
+                            <input type="number" id="numero_carta" name="numero_carta" min="1" max="13" required placeholder="Ingrese el numero">
+                        </div>
+                        <div>
+                            <label for="tipo_carta"><b>Palo de la baraja:</b></label>
+                            <input type="text" id="tipo_carta" name="tipo_carta" required placeholder="Indique el palo al que pertenece la carta">
+                        </div>
+                        <button class="guardar" type="submit">Guardar</button>
+                    </form>
+                </article>
+            </section>
+        
+    </main>
+
+    <footer>    
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto Cartas. Anyela Herrera.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
